@@ -1,0 +1,170 @@
+:root {
+  --ground: #0c0a11;
+  --ink: #dcd7e4;
+  --ink-quiet: #8f88a0;
+  --ink-faint: #635b74;
+  --rule: #262133;
+  --link: #ab88e6;
+  --link-hover: #cbb0f7;
+
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--ground);
+  color: var(--ink);
+  font-family: "Times New Roman", Times, Georgia, serif;
+  font-size: 17px;
+  line-height: 1.62;
+  padding: 64px 24px 96px;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: var(--link);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  text-decoration-thickness: 1px;
+}
+
+a:hover {
+  color: var(--link-hover);
+}
+
+a:focus-visible {
+  outline: 1px solid var(--link-hover);
+  outline-offset: 2px;
+}
+
+.sheet {
+  max-width: 40rem;
+  margin: 0 auto;
+}
+
+/* — masthead — */
+.masthead {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 8px 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--rule);
+}
+
+.masthead h1 {
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: 0.06em;
+  margin: 0;
+  text-wrap: balance;
+}
+
+.social {
+  font-size: 15px;
+}
+
+/* — sections — */
+section {
+  padding-top: 34px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+section + section {
+  margin-top: 34px;
+  border-top: 1px solid var(--rule);
+}
+
+h2 {
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--ink-quiet);
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+/* — project table — */
+.scroller {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 16px;
+}
+
+th {
+  text-align: left;
+  font-weight: 400;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--ink-faint);
+  padding: 0 12px 8px 0;
+  border-bottom: 1px solid var(--rule);
+}
+
+td {
+  vertical-align: top;
+  padding: 12px 12px 12px 0;
+  border-bottom: 1px solid var(--rule);
+}
+
+td:last-child,
+th:last-child {
+  padding-right: 0;
+}
+
+.col-links {
+  width: 8.5rem;
+  white-space: nowrap;
+  font-size: 15px;
+}
+
+.name {
+  display: block;
+}
+
+.blurb {
+  display: block;
+  color: var(--ink-quiet);
+  font-size: 15px;
+  margin-top: 2px;
+}
+
+.sep {
+  color: var(--ink-faint);
+  padding: 0 4px;
+}
+
+.quiet {
+  color: var(--ink-quiet);
+}
+
+@media (max-width: 34rem) {
+  body {
+    padding: 44px 20px 72px;
+  }
+
+  .col-links {
+    width: auto;
+  }
+}

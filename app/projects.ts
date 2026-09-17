@@ -10,6 +10,13 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    name: "FlipFrame",
+    blurb:
+      "Claude and ChatGPT can read text and look at images, but they can't watch a video. FlipFrame turns a video into one PDF you can drop into the chat: the few frames where the screen actually changes, each cropped to what changed, with the transcript of what was said until the next one. It all runs in the browser: speech is transcribed by a Whisper model running on your device, and the video never leaves it.",
+    live: "https://flipframe-psi.vercel.app",
+    code: "https://github.com/aryannpanwarr/flipframe",
+  },
+  {
     name: "Audio Read",
     blurb:
       "An Android reader that narrates PDFs and EPUBs over the original page, highlighting each word as it goes. Uses the phone's own text-to-speech — no account, no upload, nothing leaves the device. I tried bundling Kokoro for better voices, but phones aren't fast enough yet to run it in real time.",
@@ -24,10 +31,10 @@ export const projects: Project[] = [
     code: "https://github.com/aryannpanwarr/ai-tech-digest",
   },
   {
-    name: "MeshWire",
-    blurb: "An info page for AI agents, served as JSON. Under construction.",
-    live: "https://meshwire.vercel.app/",
-    code: "https://github.com/aryannpanwarr/MeshWire",
+    name: "Manufac",
+    blurb:
+      "Plant P&IDs are usually flat scanned PDFs, so answering one question about a pump means digging through datasheets, SAP, logbooks and SOPs. Manufac digitizes the drawing with Gemini vision into a clickable diagram, links every tag to its records, and puts an assistant on top that answers only from those records, with citations. Corrections you make in chat become lessons it applies on the next scan.",
+    code: "https://github.com/aryannpanwarr/manufac",
   },
   {
     name: "QuizWiz",

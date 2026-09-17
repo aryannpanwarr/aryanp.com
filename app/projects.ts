@@ -34,6 +34,7 @@ export const projects: Project[] = [
     name: "Manufac",
     blurb:
       "Plant P&IDs are usually flat scanned PDFs, so answering one question about a pump means digging through datasheets, SAP, logbooks and SOPs. Manufac digitizes the drawing with Gemini vision into a clickable diagram, links every tag to its records, and puts an assistant on top that answers only from those records, with citations. Corrections you make in chat become lessons it applies on the next scan.",
+    live: "https://manufac-eight.vercel.app",
     code: "https://github.com/aryannpanwarr/manufac",
   },
   {

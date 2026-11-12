@@ -10,13 +10,6 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    name: "FlipFrame",
-    blurb:
-      "AI chats can't watch a video. FlipFrame turns one into a short PDF: only the frames where the screen changes, each with what was said. Runs fully in your browser.",
-    live: "https://flipframe-psi.vercel.app",
-    code: "https://github.com/aryannpanwarr/flipframe",
-  },
-  {
     name: "Short Story",
     blurb:
       "Making a story video takes writing, art, voices and editing. Short Story does it from one chat message: AI writes the script, draws the scenes, voices them and edits a one-minute video.",
@@ -28,6 +21,13 @@ export const projects: Project[] = [
       "Reading long PDFs and EPUBs on a phone is tiring. Audio Read reads them aloud over the original page, highlighting each word. No account, and nothing leaves the phone.",
     live: "https://audioread-app.vercel.app",
     code: "https://github.com/aryannpanwarr/audio-read",
+  },
+  {
+    name: "FlipFrame",
+    blurb:
+      "AI chats can't watch a video. FlipFrame turns one into a short PDF: only the frames where the screen changes, each with what was said. Runs fully in your browser.",
+    live: "https://flipframe-psi.vercel.app",
+    code: "https://github.com/aryannpanwarr/flipframe",
   },
   {
     name: "AI & Tech Weekly Digest",

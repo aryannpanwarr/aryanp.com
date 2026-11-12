@@ -146,8 +146,10 @@ th:last-child {
 .blurb {
   display: block;
   color: var(--ink-quiet);
-  font-size: 15px;
-  margin-top: 2px;
+  font-size: 14px;
+  line-height: 1.5;
+  margin-top: 4px;
+  max-width: 60ch;
 }
 
 .sep {

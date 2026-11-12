@@ -41,13 +41,9 @@ export default function Home() {
                     <span className="blurb">{project.blurb}</span>
                   </td>
                   <td className="col-links">
-                    {project.live && (
-                      <>
-                        <a href={project.live}>Live</a>
-                        <span className="sep">·</span>
-                      </>
-                    )}
-                    <a href={project.code}>Code</a>
+                    {project.live && <a href={project.live}>Live</a>}
+                    {project.live && project.code && <span className="sep">·</span>}
+                    {project.code && <a href={project.code}>Code</a>}
                   </td>
                 </tr>
               ))}
